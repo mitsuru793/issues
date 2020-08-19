@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  description: 'Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.'
+  version: 0.0.1
+servers:
+  - url: 'http://api.myapp.net/v1'
+    description: 'Optional server description, e.g. Main (production) server'
+paths:
+  /posts:
+    post:
+      summary: ''
+      operationId: create-post
+      responses:
+        '200':
+          description: OK
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post:
+                  $ref: '#/components/schemas/Post'
+                tags:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/Tag'
+components:
+  schemas:
+    Post:
+      title: Post
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+    Tag:
+      title: Tag
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
