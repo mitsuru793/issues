@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+
+set dir (string join '-' $argv)
+mkdir $dir
