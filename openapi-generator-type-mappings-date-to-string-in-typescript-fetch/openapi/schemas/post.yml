@@ -1,0 +1,11 @@
+Post:
+  title: Post
+  type: object
+  properties:
+    id:
+      type: integer
+    title:
+      type: string
+    createAt:
+      type: datetime
+      format: date-time
