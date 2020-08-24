@@ -9,6 +9,8 @@ generated/にopenapiのクライアントが生成されます。
 
 新しいバージョンのgeneratorではinterface PostのプロパティはDateからstringに変換される。しかし、関数PostFromJSONTypedが変換されない。
 
+typescript-axiosでは、デコード関数などは出力されないため問題になりません。
+
 ```typescript
 /**
  * 
