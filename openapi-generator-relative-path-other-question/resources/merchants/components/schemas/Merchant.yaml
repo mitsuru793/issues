@@ -1,0 +1,12 @@
+type: object
+required:
+  - address_id
+  - name
+properties:
+  address_id:
+    type: string
+    format: uuid
+  name:
+    type: string
+  description:
+    type: string

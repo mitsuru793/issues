@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "lint": "spectral lint openapi.yaml --display-only-failures",
+    "build": "openapi-generator generate -i ./openapi.yaml -o ./generated/ -g typescript-fetch"
+  },
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^1.0.15-4.3.1"
+  },
+  "devDependencies": {
+    "@stoplight/spectral": "^5.4.0"
+  }
+}

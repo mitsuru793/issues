@@ -1,0 +1,9 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Marketplace
+servers:
+  - url: 'http://localhost:3039'
+paths:
+  /marketplace/merchants:
+    $ref: 'resources/merchants/paths/actions.yaml'
